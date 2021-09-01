@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+	<title>Hindsight 2020</title>
+	<link rel="stylesheet" type="text/css" href="artist.css">
+	<link rel="stylesheet" href="https://use.typekit.net/ftk5txc.css">
+	</head>
+
+    <style type="text/css">
+        
+    .bg-image {
+    background-image: url("assets/christian/DC_01.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    filter: blur(20px);
+}
+    </style>
+
+	<body>
+
+<div class="bg-image"></div>
+<div id="mfa" class="type-main"><a href="home.html">Home</a></div>
+
+<!-- IMAGES !!!!!!!! -->
+
+<div id="container">
+<div class="row">
+  <div class="column">
+    <img src="assets/christian/DC_01.jpg" style="width:100%" onclick="openModal();currentSlide(1)">
+  </div>
+
+  <div class="column">
+    <img src="assets/christian/DC_02.jpg" style="width:100%" onclick="openModal();currentSlide(2)">
+  </div>
+
+  <div class="column">
+    <img src="assets/christian/DC_03.jpg" style="width:100%" onclick="openModal();currentSlide(3)">
+  </div>
+
+  <div class="column">
+    <img src="assets/christian/DC_04.jpg" style="width:100%" onclick="openModal();currentSlide(4)">
+  </div>
+
+  <div class="column">
+    <img src="assets/christian/DC_05.jpg" style="width:100%" onclick="openModal();currentSlide(5)">
+  </div>
+
+
+</div></div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="assets/christian/DC_01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="assets/christian/DC_02.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="assets/christian/DC_03.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="assets/christian/DC_04.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="assets/christian/DC_05.jpg" style="width:100%">
+    </div>
+
+    
+    <a class="prev" onclick="plusSlides(-1)">←</a>
+    <a class="next" onclick="plusSlides(1)">→</a>
+
+</div></div>
+
+<!-- DROPDOWN INDEX !!!!!!!! -->
+
+<div id="list-container" class="type-main">
+<div class="icon-index">Index</div>
+<div id="dropdown" style="display:none">
+<div class="icon">
+    <a href="chen.html">Angela Chen</a><span><img src="assets/chen/Ac_1.jpg"></span>
+</div>
+<div class="icon">
+    <a href="christian.html">Deangelo Christian</a><span><img src="assets/christian/DC_01.jpg"></span>
+</div>
+<div class="icon">
+    <a href="coombs.html">Robert Andy Coombs</a><span><img src="assets/coombs/RC_2.jpg"></span>
+</div>
+<div class="icon">
+    <a href="hamovit.html">Rory Hamovit</a><span><img src="assets/hamovit/RH_1.jpg"></span>
+</div>
+<div class="icon">
+    <a href="kim.html">Dawn Kim</a><span><img src="assets/kim/DK_1.jpg"></span>
+</div>
+<div class="icon">
+    <a href="levy.html">Morgan Levy</a><span><img src="assets/levy/ML_1.jpg"></span>
+</div>
+<div class="icon">
+    <a href="lowe.html">Jane Lowe</a><span><img src="assets/lowe/JL_1.jpg"></span>
+</div>
+<div class="icon">
+    <a href="minto.html">Allison Minto</a><span><img src="assets/minto/AM_1.jpg"></span>
+</div>
+<div class="icon">
+    <a href="wang.html">Jiajun Wang</a><span><img src="assets/wang/JSW_1.jpg"></span>
+</div>
+</div></div>
+
+<!-- NAME BUTTONS !!!!!!!! -->
+
+<div id="text-left" class="type-main" style="font-style: normal;">Deangelo Christian</div>
+<div id="text-right" class="type-main">Series Title</div>
+
+
+</body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$("html").click(function(){
+   //Add class to body
+   $(".bg-image").addClass("blur");
+});
+
+	$(document).mouseup(function(e) {
+  var $container = $("#dropdown");
+  if (!$container.is(e.target) && !$(".icon-index").is(e.target) && $container.has(e.target).length === 0) {
+    $container.hide();
+  }
+});
+
+$(".icon-index").click(function() {
+  $("#dropdown").toggle();
+});
+</script>
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</html>

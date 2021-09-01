@@ -1,0 +1,122 @@
+html, body { 
+	height: 100%; 
+	margin: 0;
+}
+
+.bg-image {
+  	background-image: url("assets/JUSTIMAGE.jpg");
+  	height: 100vh;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: 0;
+}
+
+.blur{
+  	filter: blur(20px);
+  	transition: 2s filter linear;
+}
+
+#list-container {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 10;
+}
+
+#mfa {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	text-align: right;
+	z-index: 10;
+}
+
+#text-left {
+	position: fixed;
+	top: 93%;
+	left: 20px;
+	z-index: 10;
+	font-style: italic;
+}
+
+#text-right {
+	position: fixed;
+	top: 93%;
+	right: 20px;
+	z-index: 10;
+	font-style: italic;
+}
+
+#text-right:hover, #text-left:hover, .icon-index:hover {
+	border-bottom: 2px solid white;
+}
+
+#dropdown {
+	margin-top: 50px;
+}
+
+.type-main {
+    color: white;
+	font-family: neue-haas-grotesk-display,sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-style: normal;
+    font-size: 28px;
+}
+
+.icon {
+    position:relative;
+    display: block;
+    padding-bottom: 18px;
+}
+
+.icon-index {
+    position:absolute;
+    display: block;
+    margin-bottom: 18px;
+}
+
+
+.icon a {
+	text-decoration: none;
+    color: white;
+}
+
+.icon span {
+    position:absolute;
+    display: inline-block;
+	left: 300px;
+    padding:3px 6px;
+    opacity:0;
+    transition: 0.2s all ease-out;
+}
+
+.icon span img {
+	width: 300px;
+}
+
+.icon a:hover ~ * {
+    opacity:1;
+}
+
+.icon a:hover {
+    border-bottom: 2px solid white;
+}
+
+#article-tenderness, #article-other {
+	position: fixed;
+	height: 100%;
+	width: 60vw;
+	top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 20;
+    overflow: scroll;
+    padding: 0 40px;
+}
+
+.buffer {
+	height: 50px;
+	width: 100%;
+}

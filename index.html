@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+	<title>Hindsight 2020</title>
+	<link rel="stylesheet" type="text/css" href="assets/fixed.css">
+		<style>
+			html, body { height: 100%; }
+
+			body {
+				background: #000000;
+				margin: 0;
+			}
+
+			#shape {
+				background-color: transparent;
+				width: 700px;
+				height: 700px;
+				border-radius: 50%;
+    			position:absolute;
+    			left:50%;
+    			top: 50%;
+    			transform: translate(-50%,-50%);
+    			z-index: 50;
+			}
+
+				#shape:hover + .bg-image {
+				-webkit-animation: fadeIn 10s ease-out;
+			    -moz-animation: fadeIn 10s ease-out;
+		   		-o-animation: fadeIn 10s ease-out;
+		    	animation: fadeIn 10s ease-out;
+		    	animation-iteration-count: infinite;
+			}
+
+			.bg-image {
+		    	width: 100%;
+	    		height: 100%;
+	    		position: fixed;
+	    		top: 0;
+	    		left: 0;
+	    		bottom: 0;
+	    		right: 0;
+	    		background: none;
+    			margin: 0 auto; 
+    			overflow: hidden;
+				display: flex;
+			  	align-items: center;
+			  	justify-content: center;
+			  	filter: blur(20px);
+			}
+
+
+			@-webkit-keyframes fadeIn {
+			    0% {
+			  	filter: blur(20px);
+			    }		    
+			    20% {
+			  	filter: blur(2px);
+			    }	
+
+			    80% {
+			  	filter: blur(0px);
+			    }
+
+			    100% {
+			  	filter: blur(20px);
+			    }
+		    }
+
+			@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+			    #mask {
+			        -webkit-filter: blur(30px);
+			    }
+			}
+
+
+		</style>
+
+	</head>
+
+	<body>
+		<div id="shape" onclick="window.location.href='home.html'"></div>
+		<div class="bg-image">
+					<img src="assets/WITHOUTBLUR.jpg" height="100%" >
+			</div>
+		</div>		
+
+	</body>
+
+</html>
