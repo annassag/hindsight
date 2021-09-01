@@ -120,3 +120,107 @@ html, body {
 	height: 50px;
 	width: 100%;
 }
+
+/*MOBILE !!!!!!!!!!!!!!!!!!*/
+
+
+@media screen and (max-width: 800px) { 
+
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+.type-main {
+  color: white;
+  font-family: neue-haas-grotesk-display,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-size: 18px;
+}
+
+#list-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+#text-left {
+  position: fixed;
+  top: 94vh;
+  left: 10px;
+  z-index: 10;
+  font-style: italic;
+}
+
+#text-right {
+  position: fixed;
+  top: 94vh;
+  right: 10px;
+  z-index: 10;
+  font-style: italic;
+}
+
+#mfa {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  z-index: 10;
+}
+
+#dropdown {
+  margin-top: 30px;
+}
+
+.icon {
+    position:relative;
+    display: block;
+    padding-bottom: 8px;
+}
+
+.icon-index {
+    position:absolute;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#article-tenderness, #article-other {
+	position: fixed;
+	height: 75%;
+	width: 80vw;
+	top: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 20;
+    overflow: scroll;
+    padding: 0 40px;
+}
+
+.buffer {
+	height: 0px;
+	width: 100%;
+}
+
+.bg-image {
+  	background-image: url("assets/hindsight.jpg");
+  	height: 100vh;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: 0;
+  	overflow: hidden;
+}
+
+.icon span {
+	display: none;
+}
+
+.icon span img {
+	display: none;
+	width: 300px;
+}
+
+}

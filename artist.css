@@ -204,3 +204,120 @@ img {
 .column img:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }*/
+
+/*MOBILE !!!!!!!!!!!!!!!!!!*/
+
+
+@media screen and (max-width: 800px) { 
+
+.type-main {
+  color: white;
+  font-family: neue-haas-grotesk-display,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-size: 18px;
+}
+
+#list-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+#text-left {
+  position: fixed;
+  top: 94vh;
+  left: 10px;
+  z-index: 10;
+  font-style: italic;
+}
+
+#text-right {
+  position: fixed;
+  top: 94vh;
+  right: 10px;
+  z-index: 10;
+  font-style: italic;
+}
+
+#mfa {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  z-index: 10;
+}
+
+#dropdown {
+  margin-top: 30px;
+}
+
+.icon {
+    position:relative;
+    display: block;
+    padding-bottom: 8px;
+}
+
+.icon-index {
+    position:absolute;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-size: 35px;
+  transition: 0.6s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.close {
+  color: black;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  font-size: 40px;
+}
+
+  }
+
+
+
+
