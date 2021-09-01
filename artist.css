@@ -34,7 +34,7 @@ html, body {
   z-index: 10;
 }
 
-#text-right:hover, #text-left:hover, .icon-index:hover, #mfa:hover {
+.icon-index:hover, #mfa:hover {
 	border-bottom: 2px solid white;
 }
 
