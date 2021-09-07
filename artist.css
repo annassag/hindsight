@@ -129,9 +129,9 @@ a {
 }
 
 .column img {
-  min-width:100%;
+/*  min-width:100%;
   min-height:100%;
-  object-fit: cover;
+  object-fit: cover;*/
 }
 
 .modal {
