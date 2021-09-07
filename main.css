@@ -1,32 +1,63 @@
 html, body { 
 	height: 100%; 
 	margin: 0;
+	overflow: hidden;
 }
 
 .bg-image {
   	background-image: url("assets/JUSTIMAGE.jpg");
+    transform: scale(1.1);
   	height: 100vh;
+  	width: 100vw;
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
   	z-index: 0;
+  	overflow: hidden;
+  	background-attachment: fixed;
 }
 
-.blur{
+.blur {
+  	background-image: url("assets/BLURIMAGE.jpg");
+    transform: scale(1.1);
+  	height: 100vh;
+  	width: 100vw;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: 0;
+  	overflow: hidden;
+  	background-attachment: fixed;
+}
+
+.no-blur {
+  	background-image: url("assets/JUSTIMAGE.jpg");
+    transform: scale(1.1);
+  	height: 100vh;
+  	width: 100vw;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: 0;
+  	overflow: hidden;
+  	background-attachment: fixed;
+}
+
+/*.blur{
   	filter: blur(20px);
   	transition: 2s filter linear;
 }
-
+*/
 #list-container {
 	position: fixed;
-	top: 20px;
+	top: 10px;
 	left: 20px;
 	z-index: 10;
 }
 
 #mfa {
 	position: fixed;
-	top: 20px;
+	top: 10px;
 	right: 20px;
 	text-align: right;
 	z-index: 10;
@@ -34,7 +65,7 @@ html, body {
 
 #text-left {
 	position: fixed;
-	top: 93%;
+	top: 94%;
 	left: 20px;
 	z-index: 10;
 	font-style: italic;
@@ -42,7 +73,7 @@ html, body {
 
 #text-right {
 	position: fixed;
-	top: 93%;
+	top: 94%;
 	right: 20px;
 	z-index: 10;
 	font-style: italic;
@@ -149,7 +180,7 @@ body {
 
 #text-left {
   position: fixed;
-  top: 94vh;
+  top: 96%;
   left: 10px;
   z-index: 10;
   font-style: italic;
@@ -157,7 +188,7 @@ body {
 
 #text-right {
   position: fixed;
-  top: 94vh;
+  top: 96%;
   right: 10px;
   z-index: 10;
   font-style: italic;
@@ -207,11 +238,14 @@ body {
 .bg-image {
   	background-image: url("assets/hindsight.jpg");
   	height: 100vh;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	z-index: 0;
-  	overflow: hidden;
+}
+
+.blur {
+  	background-image: url("assets/hindsight-blur.png");
+}
+
+.no-blur {
+  	background-image: url("assets/hindsight.jpg");
 }
 
 .icon span {

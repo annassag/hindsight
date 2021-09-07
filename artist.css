@@ -1,18 +1,24 @@
 html, body { 
 	height: 100%; 
 	margin: 0;
+  overflow: hidden;
+}
+
+.bg-image {
+  overflow: hidden;
+  background-attachment: fixed;
 }
 
 #list-container {
 	position: fixed;
-	top: 20px;
+	top: 10px;
 	left: 20px;
 	z-index: 10;
 }
 
 #text-left {
 	position: fixed;
-	top: 93%;
+  bottom: 2%;
 	left: 20px;
 	z-index: 10;
 	font-style: italic;
@@ -20,7 +26,7 @@ html, body {
 
 #text-right {
 	position: fixed;
-	top: 93%;
+	bottom: 2%;
 	right: 20px;
 	z-index: 10;
 	font-style: italic;
@@ -28,7 +34,7 @@ html, body {
 
 #mfa {
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 20px;
   text-align: right;
   z-index: 10;
@@ -105,7 +111,7 @@ a {
 }
 
 .row > .column {
-  padding: 0 8px;
+  padding: 8px 8px;
 }
 
 .row {
@@ -122,6 +128,12 @@ a {
 .column {
 }
 
+.column img {
+  min-width:100%;
+  min-height:100%;
+  object-fit: cover;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -135,19 +147,22 @@ a {
 }
 
 .modal-content {
-  position: relative;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 0;
   width: 90%;
   max-width: 1100px;
 }
 
 .close {
-  color: black;
+  color: white;
   position: absolute;
-  top: 100px;
+  top: 50px;
   right: 40px;
-  font-size: 60px;
+  font-size: 50px;
+  font-weight: 100;
 }
 
 .mySlides {
@@ -162,11 +177,12 @@ a {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  margin: ;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
-  color: black;
+  color: white;
   font-size: 50px;
   transition: 0.6s ease;
   user-select: none;
@@ -174,8 +190,18 @@ a {
 }
 
 .next {
-  right: 0;
+  right: 30px;
 }
+
+.prev {
+  left: 30px;
+}
+
+.prev-mobile,
+.next-mobile {
+  display: none;
+}
+
 
 img {
   margin-bottom: 20px;
@@ -228,18 +254,23 @@ img {
 
 #text-left {
   position: fixed;
-  top: 94vh;
+  bottom: 2%;
   left: 10px;
   z-index: 10;
   font-style: italic;
+  width: 300px;
 }
 
 #text-right {
-  position: fixed;
-  top: 94vh;
+  position: absolute;
   right: 10px;
   z-index: 10;
-  font-style: italic;
+  bottom: 2%;
+  max-width: 170px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  direction: rtl;
 }
 
 #mfa {
@@ -276,7 +307,7 @@ img {
 }
 
 .row > .column {
-  padding: 0 8px;
+  padding: 5px 5px;
 }
 
 .row {
@@ -293,27 +324,47 @@ img {
 .column {
 }
 
+.column img {
+  min-width:100%;
+  min-height:100%;
+  object-fit: cover;
+}
+
 .prev,
 .next {
+  display: none;
+}
+
+.prev-mobile,
+.next-mobile {
+  display: block;
   cursor: pointer;
   position: absolute;
-  top: 30px;
+  top: 50%;
+  transform: translate(-0%, -50%);
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-size: 35px;
+  color: white;
+  font-size: 30px;
   transition: 0.6s ease;
   user-select: none;
   -webkit-user-select: none;
 }
 
+.next-mobile {
+  right: -15px;
+}
+
+.prev-mobile {
+  left: -15px;
+}
+
 .close {
-  color: black;
+  color: white;
   position: absolute;
   top: 40px;
   right: 10px;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 100;
 }
 
   }
