@@ -79,7 +79,7 @@ a {
 .icon span {
     position:absolute;
     display: inline-block;
-	left: 300px;
+	 left: 300px;
     padding:3px 6px;
     opacity:0;
     transition: 0.2s all ease-out;
@@ -237,6 +237,10 @@ img {
 
 
 @media screen and (max-width: 800px) { 
+
+.icon span {
+    display: none;
+}
 
 .type-main {
   color: white;
