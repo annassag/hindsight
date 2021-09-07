@@ -307,7 +307,7 @@ img {
 }
 
 .row > .column {
-  padding: 5px 5px;
+  padding: 2.5px 5px;
 }
 
 .row {
@@ -326,8 +326,10 @@ img {
 
 .column img {
   min-width:100%;
-  max-height:90px;
+  height: 110px;
+  min-height: 0;
   object-fit: cover;
+  margin-bottom: 0;
 }
 
 .prev,
