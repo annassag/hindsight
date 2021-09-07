@@ -239,7 +239,12 @@ img {
 @media screen and (max-width: 800px) { 
 
 .icon span {
-    display: none;
+  display: none;
+}
+
+.icon span img {
+  display: none;
+  width: 300px;
 }
 
 .type-main {
