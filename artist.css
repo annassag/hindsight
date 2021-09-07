@@ -111,7 +111,7 @@ a {
 }
 
 .row > .column {
-  padding: 8px 8px;
+  padding: 5px 5px;
 }
 
 .row {
@@ -129,9 +129,9 @@ a {
 }
 
 .column img {
-/*  min-width:100%;
-  min-height:100%;
-  object-fit: cover;*/
+  min-width: 200px;
+  height:100%;
+  object-fit: cover;
 }
 
 .modal {
