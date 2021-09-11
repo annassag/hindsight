@@ -6,7 +6,7 @@ html, body {
 }
 
 .bg-image {
-  	background-image: url("assets/JUSTIMAGE.jpg");
+  	background-image: url("assets/1.jpg");
     transform: scale(1.1);
   	height: 100vh;
   	width: 100vw;
@@ -19,7 +19,7 @@ html, body {
 }
 
 .blur {
-  	background-image: url("assets/BLURIMAGE.jpg");
+  	background-image: url("assets/2.jpg");
     transform: scale(1.1);
   	height: 100vh;
   	width: 100vw;
@@ -32,7 +32,7 @@ html, body {
 }
 
 .no-blur {
-  	background-image: url("assets/JUSTIMAGE.jpg");
+  	background-image: url("assets/1.jpg");
     transform: scale(1.1);
   	height: 100vh;
   	width: 100vw;
@@ -49,6 +49,7 @@ html, body {
   	transition: 2s filter linear;
 }
 */
+
 #list-container {
 	position: fixed;
 	top: 10px;
